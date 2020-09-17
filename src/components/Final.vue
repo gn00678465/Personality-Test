@@ -142,6 +142,7 @@ export default {
     @apply top-0;
     @apply right-0;
     @apply object-cover;
+    @apply rounded-t;
     z-index: -1;
   }
 }

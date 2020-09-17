@@ -54,10 +54,7 @@ export default {
 <style lang="scss">
 
 #app {
-  background-image: url('https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
-  @apply bg-center;
-  @apply bg-no-repeat;
-  @apply bg-cover;
+  background: #eee;
   @apply font-noto;
   @apply box-border;
 }

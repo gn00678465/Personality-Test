@@ -5,7 +5,7 @@
         <div class="swiper-slide" v-for="(name, i) in names" :key="i">
           <!-- description -->
           <div class="banner px-4 py-4 h-64 md:flex md:items-end md:px-8">
-            <img src="../assets/final-bg.jpg" alt="" class="banner-img">
+            <img :src="`images/${name}.jpg`" alt="" class="banner-img">
             <div>
               <p class="title text-center md:text-left">{{ traits.zh[i] }}</p>
               <p class="text-xl font-medium">{{ name }} </p>

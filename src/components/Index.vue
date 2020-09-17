@@ -2,7 +2,7 @@
   <div class="text-center">
     <div class="px-3 py-5 flex justify-center relative
       md:py-8">
-      <img src="../static/index.jpg" alt="" class="img">
+      <img src="images/index.jpg" alt="" class="img">
       <h1 class="h1">
         五大性格特質<br/>心理測驗
         <h2 class="text-sm md:text-2xl float-right mt-1 md:mt-3 ml-2 font-normal">

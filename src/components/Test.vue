@@ -15,7 +15,10 @@
         <label :for="`radio${option.fraction}`" class="radio__label">
         <span class="radio__circle border-grey flex-no-shrink
           md:w-8 md:h-8"></span>
-          <p class="radio__description">{{ option.description }}</p>
+          <p class="radio__description">
+            <span class="font-semibold">{{ optionHandler(option.description).hasBold() }}</span>
+            <span class="font-light">{{ optionHandler(option.description).noBold() }}</span>
+          </p>
         </label>
         </div>
         <button type="button" class="btn btn-next" @click.prevent="next"
@@ -64,6 +67,13 @@ export default {
     pushScore(category) {
       this.score[category].push(this.select);
       this.select = null;
+    },
+    optionHandler(str) {
+      const arr = str.split('。');
+      return {
+        hasBold() { return `${arr.slice(0, 1).join('')}。`; },
+        noBold() { return arr.slice(1).join('。'); },
+      };
     },
   },
   computed: {
@@ -125,7 +135,6 @@ export default {
   }
   &__description {
     @apply text-base;
-    @apply font-light;
     @apply flex-1;
   }
   + .radio__label .radio__circle {

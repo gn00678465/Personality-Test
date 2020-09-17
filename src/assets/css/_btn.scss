@@ -1,0 +1,12 @@
+.btn {
+  @apply font-normal;
+  @apply py-2;
+  @apply px-5;
+  @apply text-xl;
+}
+
+@screen md {
+  .btn {
+  @apply py-3 px-8 text-2xl;
+  }
+}

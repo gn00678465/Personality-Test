@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="w-full h-screen flex justify-center items-center">
+  <div id="app" class="w-full min-h-screen h-full flex justify-center items-center">
     <div class="app container">
       <transition name="fade" mode="out-in">
         <component :is="componentId" @next="next"/>

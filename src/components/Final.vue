@@ -167,7 +167,11 @@ export default {
   .trait-bullet {
     @apply pb-1;
     &-active {
-      @apply border-b-4 border-traits-500 border-solid;
+      @apply border-b-4 border-traits-500 border-solid outline-none;
+    }
+    &:active,
+    &:focus {
+      @apply outline-none;
     }
   }
 }

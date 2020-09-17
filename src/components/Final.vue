@@ -102,12 +102,16 @@ export default {
       });
       return score;
     },
+    fraction() {
+      const score = {};
+      Object.keys(store.score).forEach((item) => {
+        const scope = store.score[item].reduce((prev, curr) => prev + curr, 0);
+        score[item] = scope;
+      });
+      return score;
+    },
     names() {
       return traits.en;
-    },
-    description() {
-      const description = {};
-      return description;
     },
   },
 };
